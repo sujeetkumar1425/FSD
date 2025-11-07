@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Employee Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <div class="form-container">
+    <div class="form-header">Employee Form</div>
+
+    <form id="employeeForm">
+      <label for="empId">Employee ID</label>
+      <input id="empId" name="empId" type="text" />
+
+      <label for="designation">Designation</label>
+      <input id="designation" name="designation" type="text" />
+
+      <label for="birthDate">Birth Date</label>
+      <input id="birthDate" name="birthDate" type="date" />
+
+      <label>Gender</label>
+      <label><input type="radio" name="gender" value="Male"> Male</label>
+      <label><input type="radio" name="gender" value="Female"> Female</label>
+      <label><input type="radio" name="gender" value="Other"> Other</label>
+
+      <label for="phone">Phone Number</label>
+      <input id="phone" name="phone" type="text" />
+
+      <label for="codingLanguage">Choose Coding Language</label>
+      <select id="codingLanguage" name="codingLanguage">
+        <option value="c">C</option>
+        <option value="cpp">C++</option>
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+        <option value="javascript">JavaScript</option>
+      </select>
+
+      <input type="submit" value="Submit">
+      <button type="button" id="clearBtn">Clear Stored Data</button>
+    </form>
+  </div>
+  <script src="form.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employee Form</title>
+    
+    <style>
+      body {
+  font-family: Arial, sans-serif;
+  background-color: #1a9a89;
+  padding: 20px;
+}
+
+.form-container {
+  background-color: #c21717;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(227, 120, 20, 0.606);
+}
+
+.form-header {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  border-radius: 50%;
+  display: block;
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  width: 50%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 3px solid #f56506;
+  border-radius: 12px;
+  border-color: rgb(249, 140, 6);
+}
+
+input[type="radio"] {
+  margin-right: 6px;
+  background-color: rgb(214, 16, 16);
+  
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px;
+  width: 30%;
+  background-color: #e0691b;
+  color: whitesmoke;
+  border: rgb(17, 206, 235);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #e07d2d;
+  border-radius: 12px;
+  butt
+  h3{
+    color: white;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div style="font-size: 20px; font-weight: bold">Employee Form</div>
+
+    <form>
+      Employee ID: <br>
+      <input type="text" name="empId" /><br /><br />
+
+      Designation: <br>
+      <input type="text" name="designation" /><br /><br />
+
+      Birth Date: <br>
+      <input type="date" name="birthDate" /><br /><br />
+
+      Gender: 
+      <input type="radio" name="gender" value="Male" /> Male
+      <input type="radio" name="gender" value="Female" /> Female
+      <input type="radio" name="gender" value="Other" /> Other<br /><br />
+
+      Phone Number: <br>
+      <input type="text" name="phone" /><br /><br />
+
+      Choose Coding Language: <br>
+      <select name="codingLanguage">
+        <option value="c">C</option>
+        <option value="cpp">C++</option>
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+        <option value="javascript">JavaScript</option>
+        
+      </select><br /><br />
+
+      <input type="submit" value="Submit" />
+      <h3>Made by mvrck </h3>
+    </form>
+  </body>
+</html>

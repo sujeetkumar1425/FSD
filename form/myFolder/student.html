@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Employee Details</title>
+  <link rel="stylesheet" href="form.css">
+  <style>fieldset{max-width:600px;margin:auto;padding:16px}</style>
+</head>
+<body>
+  <fieldset>
+    <legend>Stored Employee Details</legend>
+    <div id="employeeData">Loading…</div>
+    <div style="text-align:center;margin-top:12px">
+      <button id="back">Back to Form</button>
+      <button id="clear">Clear Stored Data</button>
+    </div>
+  </fieldset>
+
+  <script>
+    (function(){
+      function render(data){
+        if(!data){
+          document.getElementById('employeeData').innerHTML = '<p>No data found. Submit the form first.</p>';
+          return;
+        }
+        const rows = Object.keys(data).map(k=>`<tr><th style="text-align:left">${k}</th><td>${data[k]}</td></tr>`).join('');
+        document.getElementById('employeeData').innerHTML = `<table>${rows}</table>`;
+      }
+      let raw = localStorage.getItem('employeeForm');
+      let data = raw? JSON.parse(raw): null;
+      render(data);
+
+      document.getElementById('back').addEventListener('click', ()=> location.href='form.html');
+      document.getElementById('clear').addEventListener('click', ()=>{ localStorage.removeItem('employeeForm'); render(null); });
+    })();
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <style>
+        fieldset {
+            background-color: #1ba19b;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 450px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <Fieldset>
+        <LEgend>STUDENT DETAILS</LEgend>
+        <form>
+        <label for="">First Name:</label>
+        <input type="text" name="firstName" placeholder="firstName"><br><br>
+        <label for="">Last Name:</label>
+        <input type="text" name="lastName" placeholder="lastName"><br><br> 
+        <label for="">Age:</label>
+        <input type="number" name="age" placeholder="Age"><br><br>    
+        <label for="">DOB:</label>
+        <input type="date" name="dob" placeholder="dob"><br><br>
+        <label for="">Email:</label>
+        <input type="email" name="email" placeholder="Enter valid Email ID"><br><br>
+        <label for="">Gender:</label>
+        <label for="male">Male</label>
+        <input type="radio" name="radio">
+        <label for="Female">female</label>
+        <input type="radio" name="radio">
+        <label for="others">others</label>
+        <input type="radio" name="radio"><br><br>
+        <label for="">Choose File:</label>
+        <input type="file" name="file" placeholder="file"><br><br>
+        
+        <label for="">Address:</label>
+        <input type="text" name="adress" placeholder="Enter Address"><br><br>
+        
+        <input type="SUBMIT" value="SUBMIT"><br><br>
+        
+    </form>
+    </Fieldset>
+    
+    
+    
+    
+</body>
+</html>
