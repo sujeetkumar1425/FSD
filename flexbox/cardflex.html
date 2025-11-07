@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+
+            margin-top: 100px;
+            flex-wrap: wrap;
+
+*
+        }
+
+        .box {
+            width: 290px;
+            height: 300px;
+
+
+            background-color: #fefcfc;
+            border-radius: 8px;
+
+            box-shadow: 0px 2px 3px;
+
+        }
+
+        .box img {
+            align-items: center;
+            width: 100%;
+            height: 75%;
+        }
+
+        .container .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #13a053;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 16px;
+            color: #fff;
+        }
+     @media(min-width:500px){
+            .container{
+                background-color: rgba(86, 120, 244, 0.814);
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--design responsive flexbox card-->
+    <div class="container">
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ_2oII-AssPFNOvcLQ6ecJ6ZWQlUbKU3j8w&s"
+                alt="">
+            <h3> Card 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, asperiores?</p>
+
+            <a href="" class="btn">read more</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJo7n7XXByw40QwFnGILGMq2BxD55PkKl8yA&s"
+                alt="">
+            <h3> Card 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sit!</p>
+            <a href="" class="btn">read more</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmDpdESZq-3Wpj65-s4kbDNMSKFbW5eJUY2Q&s"
+                alt="">
+            <h3> Card 3</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, recusandae consequuntur?</p>
+            <a href="" class="btn">read more</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
