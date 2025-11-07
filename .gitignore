@@ -1,0 +1,40 @@
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log
+
+# IDEs
+.vscode/
+.idea/
+
+# Archives and binaries
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.exe
+*.dll
+*.class
+*.pyc
+
+# Backup of form .git
+form_git_backup_*/
+
+# Build
+dist/
+build/
+
+# Logs
+*.log
+
+# Images that shouldn't be committed (if large)
+# web/id.jpg
+
+# Optional: ignore user-specific files
+*.user
+
+# End of file
