@@ -47,7 +47,7 @@ ul {
   padding: 0 var(--padding-inline-section);
 }
 .top-banner {
-  background-image: url(./assets/asset\ 32.png);
+  background-image: url(assets/asset\ 32.png);
   background-color: #4fb3d4;
   background-size: 300px;
 }
@@ -155,7 +155,7 @@ header {
 }
 .features-area {
   flex-wrap: wrap;
-  background-image: url(./assets/asset\ 34.svg);
+  background-image: url(assets/asset\ 34.svg);
   background-repeat: no-repeat;
   background-position: center;
   justify-content: space-evenly;
@@ -339,4 +339,3 @@ footer {
     height: 180px;
   }
 }
-
