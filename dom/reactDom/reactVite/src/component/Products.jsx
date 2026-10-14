@@ -18,18 +18,19 @@ export default function Products() {
     }
 
     getData();
-  }, []);
+  }, []);+3
 
   return (
     <div>
       <h1>Products</h1>
+      {JSON.stringify(data)}
 
-      {data.map((product) => (
+      {/* {data.map((product) => (
         <div key={product.id}>
           <h2>{product.title}</h2>
           <p>${product.price}</p>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 }
